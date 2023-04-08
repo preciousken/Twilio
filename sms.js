@@ -11,11 +11,11 @@ const client = require('twilio')(accountSid, authToken);
 
 client.messages
   .create({
-     body: `${message} --From ${sender}`,
+     body: `${message} 
+     --From ${sender}`,
      from: twilioNumber,
      to: myNumber
    })
-
 }
 
 module.exports={sendMessage}
